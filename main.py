@@ -1,5 +1,5 @@
-                                         # HTTP = istemci ↔ sunucu konuşma kuralı
-                                         # HyperText Transfer Protocol (Köprü Metni Aktarım Protokolü)
+                         ##             git s   # HTTP = istemci ↔ sunucu konuşma kuralı
+                                        # HyperText Transfer Protocol (Köprü Metni Aktarım Protokolü)
 import requests                          # HTTP : isteği yapmak (internet üzerinden veri çekmek) için kullanılıyor.
 from colorama import Fore, Style, init           # Konsolda renkli metin yazdırmak için kullanılıyor.
 from datetime import datetime, timedelta, timezone   # Tarih/saat işlemleri ve zaman dilimi (timezone) için gerekli.
@@ -27,7 +27,7 @@ data = response.json()                    # Cevabın gövdesini JSON formatında
                                           # data: Artık bir Python dict; içine data['main']['temp'] gibi ulaşabiliriz.
 
 # Renkli yazma Fonksiyonu
-def colored(label, value, color=Fore.YELLOW):       # varsayılan renk Sarı
+def ccolored(label, value, color=Fore.YELLOW):       # varsayılan renk Sarı
     print(f"{color}{label}:{Style.RESET_ALL}{value} ")
 
 
